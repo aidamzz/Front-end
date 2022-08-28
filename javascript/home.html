@@ -13,10 +13,14 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <button onclick="alert('Hello thanks for clicking me')">Click me</button>
-        <script src="index.js" async defer></script>
+        <p id="text">text</p>
+        <button id="changtext">Change text</button>
+        <script>
+            document.getElementById("changtext").onclick = function(){
+                alert("this is working")
+                var a = "it changed"
+                document.getElementById("text").innerHTML = a
+            }
+        </script>
     </body>
 </html>
