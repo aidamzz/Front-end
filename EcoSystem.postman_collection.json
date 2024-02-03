@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "eb888187-3546-429f-ad21-4f14f6c89af7",
+		"name": "EcoSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23284342",
+		"_collection_link": "https://blue-shadow-396513.postman.co/workspace/My-Workspace~e031fd4b-39ee-4954-880d-36f3a186a499/collection/23284342-eb888187-3546-429f-ad21-4f14f6c89af7?action=share&source=collection_link&creator=23284342"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "sendSMS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phoneNumber",
+									"value": "09381243221",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "fb37efa4-8771-4061-a258-a520169124af",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1337/sendSMS",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"sendSMS"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendEmail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "d34ee4aa-c937-400f-a8de-f51597f53482",
+									"type": "text"
+								},
+								{
+									"key": "emailSendTime",
+									"value": "2024-02-03 10:53:39.813+03:30",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "aidamohagheghzade@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1337/sendEmail2FA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"sendEmail2FA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phoneNumber",
+									"value": "09381243221",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "adasda",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1337/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phoneNumber",
+									"value": "09381243221",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "hasdas",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1337/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changePassword",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "currentPassword",
+									"value": "adasda",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "hasdas",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/v1/changePasswordGeneral/d34ee4aa-c937-400f-a8de-f51597f53482",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"v1",
+								"changePasswordGeneral",
+								"d34ee4aa-c937-400f-a8de-f51597f53482"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Messages",
+			"item": [
+				{
+					"name": "postMessage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/v1/postMessage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"v1",
+								"postMessage"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
